@@ -1,0 +1,6 @@
+public class Hola{
+  public static void main(Strig args[]{
+   
+   System.out.pritln("Hola mundo!!!")
+ }  
+}

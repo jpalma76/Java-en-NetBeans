@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+          if(e.getSource() == miRojo){
+            getContentPane().setBackground(new Color(255,0,0));
+          }
+
+          if(e.getSource() == miAzulClaro){
+            getContentPane().setBackground(new Color(255,0,0));
+
+          }
+
+          if(e.getSource() == miNegro){
+            getContentPane().setBackground(new Color(255,0,0));
+  
+          }
+
+          if(e.getSource() == miMorado){
+            getContentPane().setBackground(new Color(255,0,0));
+          }
+  
+          if(e.getSource() == miNuevo){
+            getContentPane().setBackground(new Color(255,0,0));
+          }
+  
+          if(e.getSource() == miElCreador){
+            getContentPane().setBackground(new Color(255,0,0));
+          }
+
+          if(e.getSource() == miSalir){
+            System.exit(0);
+          }

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Formulario{
+  public static void main(String args[]){
+
+  Scanner in = new Scanner(System.in);
+  String nombre = "";
+  int a = 0, b = 1, c = 0, contador = 0;
+  int i = 0;
+
+  System.out.println("");
+  System.out.println("             Secuencia Fibonacci.");
+
+
+  System.out.print("Ingrese nombre: ");
+  nombre = in.nextLine();
+
+  System.out.print("Hola " + nombre + ", cuantos numeros desea mostrar:");
+  contador = in.nextInt();
+
+  for(i = 0; i <= contador; i++){
+    if(i <= contador){
+      System.out.print("[" + a + "]");
+      c = a + b;
+      a = b;
+      b = c;
+    } 
+  }
+ }
+}

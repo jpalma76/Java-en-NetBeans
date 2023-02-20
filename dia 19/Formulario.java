@@ -1,0 +1,84 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class Formulario extends JFrame implements ActionListener{
+
+  private JLabel label1, label2, label3;
+  private JTextField textfield1, textfield2, textfield3;
+  private JTextArea textarea1;
+  private JScrollPane scrollpane1;
+  private JButton boton1, boton2;
+  String texto = "", texto1 = "", texto2 = "", ingreso = "";
+
+  public Formulario(){
+    setTitle("FORMULARIO DE INGRESO DE DATOS");
+    setLayout(null);
+
+    label1 = new JLabel("Nombre        :");
+    label1.setBounds(30,20,100,20);
+    add(label1);
+
+    label2 = new JLabel("Direccion     :");
+    label2.setBounds(30,50,100,20);
+    add(label2);
+
+    label3 = new JLabel("Telefono      :");
+    label3.setBounds(30,80,100,20);
+    add(label3);
+
+    textfield1 = new JTextField();
+    textfield1.setBounds(120,20,200,20);
+    add(textfield1);
+    
+    textfield2 = new JTextField();
+    textfield2.setBounds(120,50,200,20);
+    add(textfield2);
+
+    textfield3 = new JTextField();
+    textfield3.setBounds(120,80,200,20);
+    add(textfield3);
+
+    textarea1 = new JTextArea();
+    scrollpane1 = new JScrollPane(textarea1);
+    scrollpane1.setBounds(20,130,350,150);
+    add(scrollpane1);
+
+    boton1 = new JButton("Ingresar");
+    boton1.setBounds(330,20,90,20);
+    add(boton1);
+    boton1.addActionListener(this);
+
+    boton2 = new JButton("Salir");
+    boton2.setBounds(300,300,90,20);
+    add(boton2);
+    boton2.addActionListener(this);
+  }
+
+  public void actionPerformed(ActionEvent e){
+    if(e.getSource() == boton1){
+
+      texto = textfield1.getText() + "\n";
+      texto1 = textfield2.getText() + "\n";
+      texto2 = textfield3.getText() + "\n";
+
+      textarea1.setText(ingreso + texto + texto1 + texto2); 
+      ingreso += texto + texto1 + texto2 + "\n";      
+
+      textfield1.setText("");
+      textfield2.setText("");
+      textfield3.setText("");
+    }
+
+    if(e.getSource() == boton2){
+      System.exit(0);      
+    }
+  }
+
+  public static void main(String args[]){
+    Formulario formulario1 = new Formulario();
+    formulario1.setBounds(0,0,450,400);
+    formulario1.setVisible(true);
+    formulario1.setResizable(false);
+    formulario1.setLocationRelativeTo(null);
+  }
+}

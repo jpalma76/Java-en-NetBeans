@@ -1,0 +1,2 @@
+como hacer que de un jtable se vaya a un registro.
+jtable.getSelectionModel().addListSelectionListener(//aqui metes new listselectionlistener);

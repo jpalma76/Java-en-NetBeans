@@ -1,0 +1,33 @@
+Variables del programa.
+
+   Variable tipo String llamada nombre
+   Ingreso de datos:
+    String nombre
+    int clave
+    int antiguedad
+
+   - Clave 1 = Atencion a Clliente
+    1 año de servicio = 6 dias
+    2 a 6 años        = 14 dias
+    7 años o mas      = 20 dias
+
+   - Clave 2 = Departamento de logistica
+     1 año de servicio = 7 dias
+     2 a 6 años        = 15 dias
+     7 años o mas      = 22 dias
+
+   - Clave 3 = Gerencia
+    1 año              = 10 dias
+    2 a 6 años         = 20 dias
+    7 años             = 30 dias
+
+Nota: els sistema debe solicitar el nombre, 
+clave y antiguedad del trabajador, porteriormente 
+mostrar un mensaje que contenga el nombre del trabajador 
+y los dias a los que tiene derecho el trabajador.
+
+Trabajadores:
+- Gerardo - clave 3 - 3 años - 20 dias
+- Luis    - clave 1 - 1 año - 20 dias
+- Felix   - clave 2 - 12 años - 22 dias
+

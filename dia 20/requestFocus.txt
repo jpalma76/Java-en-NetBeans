@@ -1,0 +1,28 @@
+private void button_OKActionPerformed(java.awt.event.ActionEvent evt) {                                          
+    //Atributos generales para el cliente.
+    String nombre = textfield_nombre.getText();
+    String apellidos = textfield_apellidos.getText();
+    String DNI = textfield_DNI.getText();
+    String telefono = textfield_telefono.getText();
+    String direccion = textfield_direccion.getText();
+    String ciudad = textfield_ciudad.getText();
+    String email = textfield_email.getText();
+
+    //Comprobamos que están todos los datos insertados...
+    if(validateForm()) {
+        //Comprobamos si el DNI no existe en la base de datos...
+        if (!Conexiones.cargar_dni().contains(textfield_DNI.getText())) {
+            Cliente cliente = new Cliente(nombre, apellidos, DNI, telefono, direccion, ciudad, email);
+            //Llamamos al método alta_cliente() para insertar el cliente en la base de datos.
+            Conexiones.alta_cliente(cliente);
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(null, "¡Este DNI ya EXISTE en la base de datos!", "ADMINISTRADOR", JOptionPane.WARNING_MESSAGE);
+            textfield_DNI.requestFocus();
+        }
+    } else {
+        JOptionPane.showMessageDialog(null, "¡¡¡Debes rellenar TODOS los campos!!!", "ADMINISTRADOR", JOptionPane.WARNING_MESSAGE);
+        textfield_nombre.requestFocus();
+        textfield_nombre.setBackground(Color.decode("0xB4FF48"));
+    }
+}  

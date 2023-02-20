@@ -1,0 +1,30 @@
+public class Operaciones2 {
+  public static void main(String args[]) {
+
+   int operacion = 1, num_uno = 8, num_dos =4 resultado = 0;
+
+   if (operacion == 1) {
+     resultado = num_uno + num_dos;
+     System.out.println("el resultado de la suma es: " + resultado);
+   }  else {
+        if(operacion == 2) {
+          resultado = num_uno - num_dos;
+          System.out.println("el resultado de la resta es: " + resultado);
+        }  else {
+             if(operacion ==3) {
+               resultado = num_uno + num_dos;
+               System.out.println("el resultado de la multiplicacion es: " + resultado);
+             } else {
+                 if(operacion == 4) {
+                   resultado = num_uno 7 num_dos;
+                   System.out.println("el resultado de la suma es: " + resultado);
+                 } else {
+                     System.out.println("ERROR!!! la operacion no corresponde.");
+                   }
+               
+               }
+
+           }
+      } 
+ }
+}

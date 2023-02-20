@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Suma{
+  public static void main(String args[]){
+
+   Scanner in = new Scanner(System.in);
+   String nombre = "";
+   int num_uno = 0, num_dos = 0, resultado;
+   int operacion = 0;
+
+   System.out.println("Programa de suma con ingreso d variables:"
+   System.out.println("");
+   System.out.println("");
+
+   System.out.print("Ingrese su nombre: ");
+   nombre = in.nextLine();
+   System.out.println("");
+
+   System.out.print("Ingrese el primer numero: ");
+   num_uno = in.nextInt();
+   System.out.println("");
+
+   System.out.print("Ingrese el segundo numero: ");
+   num_dos = in.nextInt();
+   System.out.println("");
+
+
+ }
+}

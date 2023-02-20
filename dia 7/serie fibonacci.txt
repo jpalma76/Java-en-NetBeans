@@ -1,0 +1,29 @@
+Realizar la siguiente serie numerica Fibonacci utilizando
+las estructuras repetitivas for, while, do-while.
+
+- 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+int a = 0, b = 1, c = 0;
+    c=a+b
+    a=b
+    b=c
+
+print a,b  
+i  a b
+0  0,1
+1  1,1
+2  1,2
+3  2,3
+4  3,5
+5  5,8
+6  8,13
+7  13,21
+8  21,34
+9  34
+
+c=a+b
+c=55
+a=b
+b=c
+
+

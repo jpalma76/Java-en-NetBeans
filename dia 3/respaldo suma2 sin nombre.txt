@@ -1,0 +1,32 @@
+import java.util.Scanner;                                            \\ importar de java la libreria Scanner \\
+                                                                     
+public class Suma2{                                                  \\ crear (publicar) la clase Suma2 que es el nombre de nuestro programa \\
+ public static void main(String args[]){                             \\ inicializa el metodo main()  \\
+                                                                     
+   Scanner in = new Scanner(System.in);                              \\ declarar la variable Scanner dentro de in \\
+   String nombre = "";                                               \\ inicializar la variable nombre como caderan de caracteres \\
+   int num_uno = 0, num_dos = 0, num_tres = 0, resultado = 0;        \\ inicializa varables numericas \\ 
+                                                                     
+   System.out.print("ingresa tu nombre: ");                          
+   nombre = in.nextLine();                                           \\ guarda unas cadena de caracteres en la variable nombre \\
+                                                                     
+   System.out.println("Hola " + nombre);                             
+   System.out.print("Ingresa el primer numero: ");                   
+   num_uno = in.nextInt();                                           \\ guarda una cadena de numeros en la variable num_uno \\
+                                                                     
+   System.out.println("");                                           
+   System.out.print("ingresa el segundo numero: ");                  
+   num_dos = in.nextInt();                                           \\ guarda una cadena de numeros en la variable num_dos \\
+
+   System.out.println("");
+   System.out.print("ingresa el tercer numero: ");
+   num_tres = in.nextInt();                                          \\ guarda una cadena de numeros en la variable num_tres \\
+
+   resultado = num_uno + num_dos + num_tres;
+
+   System.out.println("");
+   System.out.println("_________________________________");
+   System.out.println("El resultado de tu suma es: " + resultado);
+
+ }
+}

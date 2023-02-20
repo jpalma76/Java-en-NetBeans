@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Suma{
+public static void main{
+
+   Scanner in = new Scanner(System.in);
+
+   int num_uno = 0;
+   int num_dos = 0;
+   int resultado = 0;
+
+   resultado = num_uno + num_dos;
+
+   System.out.print("Ingresa el primer numero: ";
+   num_uno = in.newInt();
+   System.out.prinln("");
+   
+   System.out.print("Ingresa el Segundo numero: ";
+   num_dos = in.newInt();
+   System.out.prinln("");
+
+ }
+}

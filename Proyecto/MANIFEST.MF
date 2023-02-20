@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Juan Palma
+Main-Class: Bienvenida
+X-COMMENT: Curso Java

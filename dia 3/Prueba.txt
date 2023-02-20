@@ -1,0 +1,9 @@
+public class Prueba{
+  public static void main(String args[]) {
+   
+   * Clave 1 = Atencion a Clliente *
+   * Clave 2 = Departamento de logistica *
+   * clave 3 = Gerencia *
+
+ }
+}

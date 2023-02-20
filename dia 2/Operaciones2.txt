@@ -1,0 +1,30 @@
+public class Operaciones2{
+  public Static void main(String args[]){
+   
+   System.out.println("*******************************************");
+   System.out.println("*Prueba de variables if . else")           ");
+   System.out.println("*******************************************");
+   System.out.println("");
+
+   int num_uno = 4, num_dos = 4, Operacion = 1, resultado = 0;
+if(Operacion == 1){
+     resultado = num_uno + num_dos;
+     System.out.println("El resultado de la suma es: " + resultado);
+   if(Operacion == 1){
+     resultado = num_uno + num_dos;
+     System.out.println("El resultado de la suma es: " + resultado);
+   } else {
+       if(Operacion == 2){
+         resultado = num_uno - num_dos;
+         System.out.println("El resultado de la resta es: " + resultado);
+       } else {
+           if(Operacion == 4){
+             resultado = num_uno / num_dos;
+             System.out.println("El resultado de la division es: " + resultado);
+         } else {
+             System.out.println("ERROR: La variable no corresponde!!!");
+           }
+
+ 
+ }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="SANTIAGOX">
+    <meta name="keywords" content="bolsa, la bolsa" />
+    <title>SANTIAGOX</title>
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32_new.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96_new.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16_new.png" sizes="16x16">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="shortcut icon" href="img/favicon/favicon_new.ico">
+    <meta name="msapplication-TileColor" content="#663fb5">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+
+    <meta name="apple-mobile-web-app-title" content="SANTIAGOX">
+
+    <!-- Xandr Universal Pixel - Initialization (include only once per page) -->
+    <script>
+        ! function(e, i) {
+            if (!e.pixie) {
+                var n = e.pixie = function(e, i, a) {
+                    n.actionQueue.push({
+                        action: e,
+                        actionValue: i,
+                        params: a
+                    })
+                };
+                n.actionQueue = [];
+                var a = i.createElement("script");
+                a.async = !0, a.src = "//acdn.adnxs.com/dmp/up/pixie.js";
+                var t = i.getElementsByTagName("head")[0];
+                t.insertBefore(a, t.firstChild)
+            }
+        }(window, document);
+        pixie('init', '2042c478-6421-4619-bee3-15bf56195030');
+    </script>
+    <!-- Xandr Universal Pixel - PageView Event -->
+    <script>
+        pixie('event', 'PageView');
+    </script> <noscript><img
+      src="https://ib.adnxs.com/pixie?pi=2042c478-6421-4619-bee3-15bf56195030&e=PageView&script=0" width="1" height="1"
+      style="display:none" /></noscript>
+
+
+    <meta name="facebook-domain-verification" content="usqdh8l5em9g03tsr7cbvbvl8ojav2" />
+
+    <!-- Bootstrap core CSS -->
+    <link async href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preload" href="assets/lib/kendo-ui/styles/fonts/glyphs/WebComponentsIcons.ttf?gedxeo" as="font" crossorigin>
+
+    <!-- Personalizacion -->
+    <link async href="css/customize.min.css?r=12" rel="stylesheet">
+    <link async href="css/bolsa.fonts.min.css" rel="stylesheet">
+    <link async href="css/premium.min.css" rel="stylesheet">
+
+    <!-- Script jquery -->
+    <script type="text/javascript" src="assets/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- Slick -->
+    <link async rel="stylesheet" type="text/css" href="assets/lib/slick-carousel/slick/slick.css">
+    <link async rel="stylesheet" type="text/css" href="assets/lib/slick-carousel/slick/slick-theme.css">
+
+    <!-- Galeria -->
+    <link async rel="stylesheet" type="text/css" href="css/lightGallery.min.css">
+
+    <!-- Icons Kendo -->
+    <link async href="css/kendo.icons.min.css" rel="stylesheet">
+
+    <!-- Kendo core CSS -->
+    <link async href="assets/lib/kendo-ui/styles/kendo.common.min.css" rel="stylesheet">
+    <link async href="assets/lib/kendo-ui/styles/kendo.common-material.min.css" rel="stylesheet">
+    <link async href="assets/lib/kendo-ui/styles/kendo.material.min.css" rel="stylesheet">
+    <link async href="assets/lib/kendo-ui/styles/kendo.material.mobile.min.css" rel="stylesheet">
+
+    <!-- Icons Fontawesome -->
+    <link async href="css/fontawesome.min.css" rel="stylesheet">
+
+    <!-- Spinner -->
+    <link async href="css/spinner.min.css" rel="stylesheet">
+
+    <!-- Animate -->
+    <link async href="css/animate.min.css?r=1" rel="stylesheet">
+
+    <!-- Accesibilidad colores -->
+    <link async href="css/acc-bn.min.css?r=1" rel="stylesheet">
+    <link async href="css/acc-yn.min.css?r=1" rel="stylesheet">
+
+    <!-- Accesibilidad textos -->
+    <link async href="css/acc-txl.min.css" rel="stylesheet">
+    <link async href="css/acc-tl.min.css" rel="stylesheet">
+    <link async href="css/acc-tm.min.css" rel="stylesheet">
+
+    <!-- AngularJS -->
+    <script defer type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-resource/angular-resource.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-route/angular-route.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-animate/angular-animate.min.js"></script>
+
+    <!--  Kendo Libs -->
+    <script defer type="text/javascript" src="assets/lib/kendo-ui/js/kendo.all.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/kendo-ui/js/messages/kendo.messages.es-CL.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/kendo-ui/js/cultures/kendo.culture.es-CL.min.js"></script>
+
+    <!-- Socket.io -->
+    <script async type="text/javascript" src="socket.io/socket.io.js"></script>
+
+    <!-- XLSX -->
+    <script defer type="text/javascript" src="assets/lib/js-xlsx/dist/xlsx.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/js-xlsx/dist/xlsx.core.min.js"></script>
+
+    <!-- Extend string -->
+    <script defer type="text/javascript" src="js/string.min.js?r=4"></script>
+
+    <!-- Carrusel -->
+    <script defer type="text/javascript" src="assets/lib/slick-carousel/slick/slick.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-slick-carousel/dist/angular-slick.min.js"></script>
+
+    <!-- x2js -->
+    <script defer src="assets/lib/x2js/xml2json.min.js"></script>
+    <script defer src="assets/lib/angular-x2js/dist/x2js.min.js"></script>
+
+    <!-- Galeria -->
+    <script defer type="text/javascript" src="js/lightGallery.min.js?r=1"></script>
+
+    <!-- cropper -->
+    <script defer src="assets/lib/ui-cropper/compile/minified/ui-cropper.js"></script>
+
+    <!-- Notifyjs -->
+    <script async type="text/javascript" src="assets/lib/notifyjs/dist/notify.js"></script>
+
+    <!-- Analytics -->
+    <script defer src="assets/lib/angular-google-analytics/dist/angular-google-analytics.min.js"></script>
+
+    <!-- angular translate -->
+    <script defer type="text/javascript" src="assets/lib/angular-cookies/angular-cookies.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-translate/angular-translate.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+    <script defer type="text/javascript" src="assets/lib/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+
+    <!-- recaptcha -->
+    <script defer type="text/javascript" src="assets/lib/angular-recaptcha/release/angular-recaptcha.min.js"></script>
+
+    <!-- lb services -->
+    <script defer type="text/javascript" src="app/lb-services.min.js?r=24"></script>
+
+    <!-- Script Bolsa -->
+    <script defer type="text/javascript" src="dist/bcs-controller.min.js?r=102"></script>
+    <script defer type="text/javascript" src="dist/bcs-assets.min.js?r=49"></script>
+
+    <!-- Translate -->
+    <script defer type="text/javascript" src="translate/TranslateProvider.min.js?r=26"></script>
+
+    <!-- Extras -->
+    <script defer type="text/javascript" src="assets/ng-extras/SPUtil.min.js?r=5"></script>
+
+    <!-- banner COPESA -->
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+    <script>
+        window.googletag = window.googletag || {
+            cmd: []
+        };
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/124506296/Bolsadesantiago_970x90', [
+                    [970, 90]
+                ], 'div-gpt-ad-4054863-1')
+                .addService(googletag.pubads());
+            googletag.defineSlot('/124506296/N_NEGOCIOS_Bolsadesantiago/Bolsadesantiago_300x250', [
+                    [300, 250]
+                ], 'div-gpt-ad-4054863-2')
+                .addService(googletag.pubads());
+
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+
+    <script>
+        var __uzdbm_1 = "b01a71ac-c4d1-4191-8619-16331e065771";
+        var __uzdbm_2 = "OTkwNmVkNzctYmp1ai00MzM3LWFiNmEtNTA3Y2ZiYTBjMDcwJDIwMC4yNS4yMi4xMzg=";
+    </script>
+    <script>
+        (function(w, d, e, u, c, g, a, b) {
+            w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {
+                ss_cid: c,
+                domain_info: "auto"
+            };
+            w[g] = function(i, j) {
+                w["SSJSConnectorObj"][i] = j
+            };
+            a = d.createElement(e);
+            a.async = true;
+            a.src = u;
+            b = d.getElementsByTagName(e)[0];
+            b.parentNode.insertBefore(a, b);
+        })(window, document, "script", "https://cdn.perfdrive.com/aperture/aperture.js", "bjul", "ssConf");
+        ssConf("c1", "www.bolsadesantiago.com");
+        ssConf("c2", true);
+        ssConf("c3", "jsdatabotmanager");
+    </script>
+</head>
+
+<body ng-app="app" ng-controller="mainController" ng-cloak ng-show="globales.body" ng-class="$root.classBody">
+
+    <div id="fb-root"></div>
+    <script async>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.1&appId=425573734453377&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- HEADER -->
+    <ng-include src="'shared/header.html'" style="z-index: 15"></ng-include>
+
+    <!-- CONTENT -->
+    <div ng-view class="animated fadeIn position-relative" style="z-index: 14"></div>
+
+    <!-- FOOTER -->
+    <ng-include src="'shared/footer.html'" class="position-relative" style="z-index: 13"></ng-include>
+
+    <!-- inicio chat gat-blac -->
+    <div id="webchat" style="z-index:16;"></div>
+
+    <script defer src="https://bcs.gatblac.com/release/chatbox/chat-object.js"></script>
+    <script defer>
+        $(document).ready(function() {
+            checkCookie();
+            msieversion();
+            GB_INIT_CHAT({
+                websocket_url: 'wss://api-bcs.gatblac.com/',
+                type: 'config',
+                channel: '5c09761e09e8cc71486a22d8',
+                service_key: '$bcsPRO$'
+            });
+        });
+    </script>
+    <!-- fin chat gat-blac -->
+
+</body>
+
+</html>
+<script id="f5_cspm">
+    (function() {
+        var f5_cspm = {
+            f5_p: 'CPKJCHFMCAGAGFHLKEOKBAHPNLCGLCKCCKEMCBPPHFMADPKNBIELBEMGAEGGDGMMKFEBMNNFEFFJNMEFOLAALOOCAAIAOADPCKKBFDNOEKIHKCKANFGHGJGDMHLPOIMK',
+            setCharAt: function(str, index, chr) {
+                if (index > str.length - 1) return str;
+                return str.substr(0, index) + chr + str.substr(index + 1);
+            },
+            get_byte: function(str, i) {
+                var s = (i / 16) | 0;
+                i = (i & 15);
+                s = s * 32;
+                return ((str.charCodeAt(i + 16 + s) - 65) << 4) | (str.charCodeAt(i + s) - 65);
+            },
+            set_byte: function(str, i, b) {
+                var s = (i / 16) | 0;
+                i = (i & 15);
+                s = s * 32;
+                str = f5_cspm.setCharAt(str, (i + 16 + s), String.fromCharCode((b >> 4) + 65));
+                str = f5_cspm.setCharAt(str, (i + s), String.fromCharCode((b & 15) + 65));
+                return str;
+            },
+            set_latency: function(str, latency) {
+                latency = latency & 0xffff;
+                str = f5_cspm.set_byte(str, 40, (latency >> 8));
+                str = f5_cspm.set_byte(str, 41, (latency & 0xff));
+                str = f5_cspm.set_byte(str, 35, 2);
+                return str;
+            },
+            wait_perf_data: function() {
+                try {
+                    var wp = window.performance.timing;
+                    if (wp.loadEventEnd > 0) {
+                        var res = wp.loadEventEnd - wp.navigationStart;
+                        if (res < 60001) {
+                            var cookie_val = f5_cspm.set_latency(f5_cspm.f5_p, res);
+                            window.document.cookie = 'f5avr0640261562aaaaaaaaaaaaaaaa_cspm_=' + encodeURIComponent(cookie_val) + ';path=/';
+                        }
+                        return;
+                    }
+                } catch (err) {
+                    return;
+                }
+                setTimeout(f5_cspm.wait_perf_data, 100);
+                return;
+            },
+            go: function() {
+                var chunk = window.document.cookie.split(/\s*;\s*/);
+                for (var i = 0; i < chunk.length; ++i) {
+                    var pair = chunk[i].split(/\s*=\s*/);
+                    if (pair[0] == 'f5_cspm' && pair[1] == '1234') {
+                        var d = new Date();
+                        d.setTime(d.getTime() - 1000);
+                        window.document.cookie = 'f5_cspm=;expires=' + d.toUTCString() + ';path=/;';
+                        setTimeout(f5_cspm.wait_perf_data, 100);
+                    }
+                }
+            }
+        }
+        f5_cspm.go();
+    }());
+</script>
